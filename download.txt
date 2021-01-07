@@ -1,0 +1,2 @@
+main_model.py中Bert embedding所需要的chinese_L-12_H-768_A-12的下载网址（解压到目录下替换掉空文件夹 chinese_L-12_H-768_A-12）：
+https://gitlab.com/snowhitiger/weibo_sentiment_analysis/blob/master/chinese_L-12_H-768_A-12.tar.gz
