@@ -12,7 +12,7 @@
     1. bare_bilstmcrf.py使用随机向量作为初始词向量，相关的数据预处理代码在Bare_BiLSTM_CRF文件夹  
     2. main_model.py模型训练与预测，采用word2Vec词嵌入和BERT词向量两种方式  
     3. transfer_target.py场景迁移部分  
-    
+    4. Bare_BiLSTM_CRF: processing_data.py是数据预处理，处理成NER需要的数据格式
   
 ## 模型结果
 1.bare_bilstm_crf  
