@@ -15,7 +15,7 @@
   
 ## 模型结果
         1.bare_bilstm_crf
-        ![bare_bilstm+crf](https://github.com/Fitnessnlp/Clinical_ner/blob/master/Bare_BiLSTM_CRF/1610012131(1).png)   
+![bare_bilstm+crf](https://github.com/Fitnessnlp/Clinical_ner/blob/master/Bare_BiLSTM_CRF/1610012131(1).png)   
         2. word2vec
                 precision    recall  f1-score   support
             TRA     0.6083    0.4193    0.4964       663
