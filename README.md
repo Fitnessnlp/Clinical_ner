@@ -14,9 +14,9 @@
     
   
 ## 模型结果
-        1.bare_bilstm_crf  
-        ![bare_bilstm+crf](https://github.com/Fitnessnlp/Clinical_ner/blob/master/Bare_BiLSTM_CRF/1610012131(1).png)   
-        2. word2vec  
+1.bare_bilstm_crf  
+![bare_bilstm+crf](https://github.com/Fitnessnlp/Clinical_ner/blob/master/Bare_BiLSTM_CRF/1610012131(1).png)   
+2. word2vec  
                 precision    recall  f1-score   support
             TRA     0.6083    0.4193    0.4964       663
             ORI     0.3327    0.2696    0.2978       638
@@ -25,7 +25,7 @@
             micro avg     0.4516    0.3411    0.3887      1328
             macro avg     0.4667    0.3411    0.3936      1328
 
-        3.BERT  
+3.BERT  
                 precision    recall  f1-score   support
             TRA     0.2904    0.2635    0.2763       873
             SIZ     0.1600    0.0792    0.1060       101
