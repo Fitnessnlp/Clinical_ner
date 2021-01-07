@@ -14,4 +14,4 @@
     
   
 ## 模型结果
-![](https://github.com/Fitnessnlp/Clinical_ner/blob/master/Bare_BiLSTM_CRF/1610012131(1).png) 
+![bare_bilstm+crf](https://github.com/Fitnessnlp/Clinical_ner/blob/master/Bare_BiLSTM_CRF/1610012131(1).png) 
