@@ -4,7 +4,7 @@
     词向量Word2Vec用genism训练，利用1000条各个场景的非标注数据训练词向量  
     跨场景迁移用的是sklearn_crfsuite，基于CRF算法
 ## 目录结构：
-* Bare_BiLSTM_CRF  
+├── Bare_BiLSTM_CRF  
     * bilstm_crf  
         * model  
     * checkpoints  
@@ -16,6 +16,10 @@
     * data_loader.py  
     * processing_data.py  
     * tag2id.py  
+* data 
+* logs 
+* Bare_BiLSTM_CRF 
+* Bare_BiLSTM_CRF 
 
 
 ## 配置：
