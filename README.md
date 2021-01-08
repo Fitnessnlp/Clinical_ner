@@ -5,21 +5,25 @@
     跨场景迁移用的是sklearn_crfsuite，基于CRF算法
 ## 目录结构：
 ├── Bare_BiLSTM_CRF  
-    * bilstm_crf  
-        * model  
-    * checkpoints  
-        * lstm_crf.pth  
-    * data  
-    * venv  
-    * bilstm_crf_argparse.py  
-    * consta.py  
-    * data_loader.py  
-    * processing_data.py  
-    * tag2id.py  
-* data 
-* logs 
-* Bare_BiLSTM_CRF 
-* Bare_BiLSTM_CRF 
+│ ├──  bilstm_crf  
+│ │ ├── model  
+│ ├──  checkpoints  
+│ │ ├── lstm_crf.pth  
+│ ├──  data  
+│ ├──  venv  
+│ ├──  bilstm_crf_argparse.py  
+│ ├──  consta.py  
+│ ├──  data_loader.py  
+│ ├──  processing_data.py  
+│ ├──  tag2id.py  
+├── data 
+├── logs 
+├── README.md
+├── bare_bilstm.py 
+├── config.py
+├── main_model.py
+├── transfer_target.py
+├── word2vec.model
 
 
 ## 配置：
