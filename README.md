@@ -18,18 +18,19 @@
 │ ├──  tag2id.py  
 ├── data 
 ├── logs 
-├── README.md
-├── bare_bilstm.py 
-├── config.py
-├── main_model.py
-├── transfer_target.py
-├── word2vec.model
+├── README.md  
+├── bare_bilstm.py  
+├── config.py  
+├── main_model.py  
+├── transfer_target.py  
+├── word2vec.model  
 
 
 ## 配置：
 >> tensorflow = 1.15  
 >> kashgari = 1.1.1  
 >> Pytorch >= 1.0  
+>> 下载chinese_L-12_H-768_A-12，解压到一级目录 （https://gitlab.com/snowhitiger/weibo_sentiment_analysis/blob/master/chinese_L-12_H-768_A-12.tar.gz）
 
 ## 代码：
     1. bare_bilstmcrf.py使用随机向量作为初始词向量，相关的数据预处理代码在Bare_BiLSTM_CRF文件夹  
