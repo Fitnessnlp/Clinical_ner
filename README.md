@@ -16,13 +16,13 @@
 │ ├──  data_loader.py  
 │ ├──  processing_data.py  
 │ ├──  tag2id.py  
-├── data 
-├── logs 
+├── data  
+├── logs  
 ├── README.md  
 ├── bare_bilstm.py  
-├── config.py 
-├── download.txt 
-├── main_model.py  
+├── config.py  
+├── download.txt  
+├── main_model.py   
 ├── transfer_target.py  
 ├── word2vec.model  
 
