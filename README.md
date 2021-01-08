@@ -25,22 +25,17 @@
 
 
 ## 说明：
-    * bare_bilstmcrf.py使用随机向量作为初始词向量，
-    NER模型使用BiLSTM+CRF和BERT+BiLSTM+CRF两种，kashgari框架实现模型
-    词向量Word2Vec用genism训练，利用1000条各个场景的非标注数据训练词向量  
-    跨场景迁移用的是sklearn_crfsuite，基于CRF算法
+    1. Bare_BiLSTM_CRF文件夹中，bilstm_crf_argparse.py是使用argparse设置模型参数；data_loader.py创建torch的DataLoader；processing_data.py是把病历文本用BIO进行标注，生成NER模型训练测试所需的数据格式；tag2id.py生成病历文本的语料库；
+    2. bare_bilstmcrf.py使用随机向量作为初始词向量，训练并评估模型效果，模型及数据在Bare_BiLSTM_CRF文件夹
+    3. 下载chinese_L-12_H-768_A-12，解压到一级目录（详见download.txt），他是一个BERT预训练模型，可以在这个预训练模型上面进行fine-tune
+    4. main_model.py模型训练与预测，采用word2Vec词嵌入和BERT词向量两种方式；其中词向量Word2Vec用genism训练，利用1000条各个场景的非标注数据训练词向量；BERT embedding采用 chinese_L-12_H-768_A-12
+    5. transfer_target.py场景迁移部分，跨场景迁移用的是sklearn_crfsuite，基于CRF算法
 
 ## 配置：
 >> tensorflow = 1.15  
 >> kashgari = 1.1.1  
 >> Pytorch >= 1.0  
->> 下载chinese_L-12_H-768_A-12，解压到一级目录（详见download.txt）
 
-## 代码：
-    1. bare_bilstmcrf.py使用随机向量作为初始词向量，相关的数据预处理代码在Bare_BiLSTM_CRF文件夹  
-    2. main_model.py模型训练与预测，采用word2Vec词嵌入和BERT词向量两种方式  
-    3. transfer_target.py场景迁移部分  
-    4. Bare_BiLSTM_CRF: processing_data.py是数据预处理，处理成NER需要的数据格式  
   
 ## 模型结果
 1.bare_bilstm_crf  
