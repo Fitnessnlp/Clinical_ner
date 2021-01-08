@@ -26,11 +26,11 @@
 
 ## 说明：
     1. Bare_BiLSTM_CRF文件夹中，bilstm_crf_argparse.py是使用argparse设置模型参数；data_loader.py创建torch的DataLoader；processing_data.py  
-    是把病历文本用BIO进行标注，生成NER模型训练测试所需的数据格式；tag2id.py生成病历文本的语料库；
-    2. bare_bilstmcrf.py使用随机向量作为初始词向量，训练并评估模型效果，模型及数据在Bare_BiLSTM_CRF文件夹
-    3. 下载chinese_L-12_H-768_A-12，解压到一级目录（详见download.txt），他是一个BERT预训练模型，可以在这个预训练模型上面进行fine-tune
+    是把病历文本用BIO进行标注，生成NER模型训练测试所需的数据格式；tag2id.py生成病历文本的语料库；  
+    2. bare_bilstmcrf.py使用随机向量作为初始词向量，训练并评估模型效果，模型及数据在Bare_BiLSTM_CRF文件夹  
+    3. 下载chinese_L-12_H-768_A-12，解压到一级目录（详见download.txt），他是一个BERT预训练模型，可以在这个预训练模型上面进行fine-tune  
     4. main_model.py模型训练与预测，采用word2Vec词嵌入和BERT词向量两种方式；其中词向量Word2Vec用genism训练，利用1000条各个场景的非标注数据训练词向量；  
-    BERT embedding采用 chinese_L-12_H-768_A-12
+    BERT embedding采用 chinese_L-12_H-768_A-12  
     5. transfer_target.py场景迁移部分，跨场景迁移用的是sklearn_crfsuite，基于CRF算法
 
 ## 配置：
