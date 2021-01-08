@@ -1,12 +1,9 @@
 # 中文病历命名实体识别
 
-    NER模型使用BiLSTM+CRF和BERT+BiLSTM+CRF两种，kashgari框架实现模型
-    词向量Word2Vec用genism训练，利用1000条各个场景的非标注数据训练词向量  
-    跨场景迁移用的是sklearn_crfsuite，基于CRF算法
 ## 目录结构：
 ├── Bare_BiLSTM_CRF  
 │ ├──  bilstm_crf  
-│ │ ├── model  
+│ │ ├── model.py  
 │ ├──  checkpoints  
 │ │ ├── lstm_crf.pth  
 │ ├──  data  
@@ -26,6 +23,12 @@
 ├── transfer_target.py  
 ├── word2vec.model  
 
+
+## 说明：
+    * bare_bilstmcrf.py使用随机向量作为初始词向量，
+    NER模型使用BiLSTM+CRF和BERT+BiLSTM+CRF两种，kashgari框架实现模型
+    词向量Word2Vec用genism训练，利用1000条各个场景的非标注数据训练词向量  
+    跨场景迁移用的是sklearn_crfsuite，基于CRF算法
 
 ## 配置：
 >> tensorflow = 1.15  
