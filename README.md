@@ -5,8 +5,8 @@
     跨场景迁移用的是sklearn_crfsuite，基于CRF算法
 ## 目录结构：
 Bare_BiLSTM_CRF  
--bilstm_crf  
---model  
+*bilstm_crf  
+    *model  
 -checkpoints  
 --lstm_crf.pth  
 -data  
