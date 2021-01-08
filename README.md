@@ -6,7 +6,8 @@
 
 ## 配置：
 >> tensorflow = 1.15  
->> kashgari = 1.1.1
+>> kashgari = 1.1.1  
+>> Pytorch >= 1.0  
 
 ## 代码：
     1. bare_bilstmcrf.py使用随机向量作为初始词向量，相关的数据预处理代码在Bare_BiLSTM_CRF文件夹  
